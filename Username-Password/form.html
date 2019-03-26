@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Submit Form</title>
+	<link rel="stylesheet" href="form.css">
+</head>
+<body>
+	<div class="container">
+		<form name="my-form" action="#" method="post" onsubmit="return SubmitUser()">
+			<h1 class="page-title">Register Form</h1>
+			<div class="username-container">
+				<label for="username">Username</label>
+				<input type="text" name="username" id="username" placeholder="username">
+				<div id="username-error"></div>
+			</div>
+			<div class="password-container">
+				<label for="password">Password</label>
+				<input type="password" name="password" id="password" placeholder="password">
+				<div id="password-error"></div>
+			</div>
+			<div class="password-repeat--container">
+				<label for="repeat">Repeat the password</label>
+				<input type="password" name="repeat" id="repeat" placeholder="repeat password">
+				<div id="repeat-error"></div>
+			</div>
+			<div class="age-checkbox--container">
+				<input type="checkbox" name="age" id="age">
+				<label for="age">At lest 18 years old</label>
+				<div id="age-error"></div>
+			</div>
+			<div class="accept">
+				<input type="checkbox" name="accept" id="accept">
+				<label for="accept">I accept the terms and conditions</label>
+				<div id="accept-error"></div>
+			</div>
+			<input type="submit" name="submit-btn" id="submit-btn" value="Register">
+		</form>
+
+		<table id="users-data">
+			<thead>
+				<tr>
+					<td>Username</td>
+					<td>Password</td>
+					<td>Age</td>
+					<td>Terms of Service</td>
+					<td>Action</td>
+				</tr>
+			</thead>
+			<tbody>
+				
+			</tbody>
+		</table>
+	</div>
+
+	<script src="form.js"></script>
+</body>
+</html>
